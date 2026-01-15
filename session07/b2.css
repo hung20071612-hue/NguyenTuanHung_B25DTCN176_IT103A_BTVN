@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+.service-card {
+    border: 2PX solid #1eff29;
+    border-radius: 10PX;
+    width: 300px;
+    margin-left: 40%;
+}

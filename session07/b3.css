@@ -1,0 +1,19 @@
+
+.card {
+    display: block;
+    width: 380px;
+    border: 1px solid black;
+    height: 520px;
+}
+h2, h3, h4, p {
+    padding-left: 10px;
+}
+h3::before {
+    content: "⭐";
+}
+h3 {
+    color: orange;
+}
+h4 {
+    color: greenyellow;
+}

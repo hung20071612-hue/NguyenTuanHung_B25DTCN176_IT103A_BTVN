@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header {
+    background-color: #0066ff;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 40px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+}
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+.nav-link:hover {
+    opacity: 0.8;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+.main-content {
+    padding: 40px 0;
+}
+.welcome-block {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome-text h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.welcome-text p {
+    color: #666;
+    font-size: 16px;
+}
+.progress-info {
+    text-align: right;
+}
+.progress-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+.progress-bar {
+    width: 200px;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+.progress-fill {
+    height: 100%;
+    background-color: #0066ff;
+    transition: width 0.3s ease;
+}
+.courses-section {
+    margin-bottom: 50px;
+}
+.section-title {
+    font-size: 24px;
+    color: #0066ff;
+    margin-bottom: 25px;
+}
+.courses {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.course-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.course-image {
+    width: 100%;
+    height: 200px;
+    background-color: #e0e0e0;
+}
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.course-info {
+    padding: 20px;
+}
+.course-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.course-progress {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.btn-continue {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-continue:hover {
+    background-color: #0052cc;
+}
+.suggest {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.suggest-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.suggest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.suggest-image {
+    width: 100%;
+    height: 250px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+.suggest-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.suggest-info {
+    padding: 20px;
+}
+.suggest-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.suggest-desc {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.btn-detail {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-detail:hover {
+    background-color: #0052cc;
+}
+@media (max-width: 768px) {
+    .search-bar {
+        display: none;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .welcome-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .progress-info {
+        width: 100%;
+        text-align: left;
+    }
+    .progress-bar {
+        width: 100%;
+    }
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+    .suggest-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .course-image,
+    .suggest-image {
+        height: 180px;
+    }
+}
